@@ -1,0 +1,155 @@
+{
+	"actions": [],
+	"allow_rename": 0,
+	"autoname": "MCP-LOG-.#####",
+	"creation": "2026-03-25 00:00:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"question",
+		"detected_module",
+		"detected_metric",
+		"column_break_1",
+		"tool_matched",
+		"fallback_used",
+		"response_time_ms",
+		"section_break_query",
+		"fallback_query",
+		"section_break_answer",
+		"answer_given",
+		"section_break_meta",
+		"user",
+		"timestamp",
+		"column_break_2",
+		"flagged_for_tool",
+		"notes"
+	],
+	"fields": [
+		{
+			"fieldname": "question",
+			"fieldtype": "Long Text",
+			"in_list_view": 1,
+			"label": "Question",
+			"reqd": 1
+		},
+		{
+			"fieldname": "detected_module",
+			"fieldtype": "Data",
+			"in_list_view": 1,
+			"label": "Detected Module"
+		},
+		{
+			"fieldname": "detected_metric",
+			"fieldtype": "Data",
+			"label": "Detected Metric"
+		},
+		{
+			"fieldname": "column_break_1",
+			"fieldtype": "Column Break"
+		},
+		{
+			"default": "0",
+			"fieldname": "tool_matched",
+			"fieldtype": "Check",
+			"in_list_view": 1,
+			"label": "Tool Matched"
+		},
+		{
+			"default": "0",
+			"fieldname": "fallback_used",
+			"fieldtype": "Check",
+			"in_list_view": 1,
+			"label": "Fallback Used"
+		},
+		{
+			"fieldname": "response_time_ms",
+			"fieldtype": "Int",
+			"label": "Response Time (ms)"
+		},
+		{
+			"fieldname": "section_break_query",
+			"fieldtype": "Section Break",
+			"label": "Fallback Query"
+		},
+		{
+			"fieldname": "fallback_query",
+			"fieldtype": "Code",
+			"label": "Fallback Query",
+			"options": "SQL"
+		},
+		{
+			"fieldname": "section_break_answer",
+			"fieldtype": "Section Break",
+			"label": "Answer"
+		},
+		{
+			"fieldname": "answer_given",
+			"fieldtype": "Long Text",
+			"label": "Answer Given"
+		},
+		{
+			"fieldname": "section_break_meta",
+			"fieldtype": "Section Break",
+			"label": "Metadata"
+		},
+		{
+			"fieldname": "user",
+			"fieldtype": "Link",
+			"label": "User",
+			"options": "User"
+		},
+		{
+			"fieldname": "timestamp",
+			"fieldtype": "Datetime",
+			"label": "Timestamp"
+		},
+		{
+			"fieldname": "column_break_2",
+			"fieldtype": "Column Break"
+		},
+		{
+			"default": "0",
+			"fieldname": "flagged_for_tool",
+			"fieldtype": "Check",
+			"label": "Flagged for Tool"
+		},
+		{
+			"fieldname": "notes",
+			"fieldtype": "Text",
+			"label": "Notes"
+		}
+	],
+	"index_web_pages_for_search": 0,
+	"links": [],
+	"modified": "2026-03-25 00:00:00",
+	"modified_by": "Administrator",
+	"module": "E2Next Ai",
+	"name": "MCP Query Log",
+	"naming_rule": "Expression",
+	"owner": "Administrator",
+	"permissions": [
+		{
+			"create": 1,
+			"delete": 1,
+			"email": 1,
+			"export": 1,
+			"print": 1,
+			"read": 1,
+			"report": 1,
+			"role": "System Manager",
+			"share": 1,
+			"write": 1
+		},
+		{
+			"create": 1,
+			"read": 1,
+			"report": 1,
+			"role": "All",
+			"write": 0
+		}
+	],
+	"sort_field": "creation",
+	"sort_order": "DESC",
+	"states": [],
+	"track_changes": 0
+}
