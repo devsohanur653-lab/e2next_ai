@@ -4,7 +4,7 @@ authors = [
     { name = "Sohanur Rahman", email = "dev.sohanur653@gmail.com"}
 ]
 description = "Ai Chatbot for erpnext"
-requires-python = ">=3.14"
+requires-python = ">=3.11"
 readme = "README.md"
 dynamic = ["version"]
 dependencies = [
