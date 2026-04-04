@@ -536,3 +536,15 @@ def downtime_summary(
 	return registry.get("downtime_summary").execute(
 		company=company, workstation=workstation, from_date=from_date, to_date=to_date
 	)
+
+
+# ── Chat API (Gemini LLM) ─────────────────────────────────────────
+
+
+@frappe.whitelist()
+def chat(message: str, session_id: str | None = None) -> dict:
+	"""Chat with E2Next AI via Gemini LLM."""
+	_ensure_registry()
+	from e2next_ai.gemini_chat import handle_chat
+
+	return handle_chat(message=message, session_id=session_id)

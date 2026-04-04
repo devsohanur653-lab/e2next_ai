@@ -1,0 +1,108 @@
+{
+	"actions": [],
+	"allow_rename": 0,
+	"creation": "2026-04-03 00:00:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"enabled",
+		"column_break_1",
+		"gemini_model",
+		"section_break_api",
+		"gemini_api_key",
+		"section_break_prompt",
+		"system_prompt",
+		"section_break_limits",
+		"max_tool_rounds",
+		"column_break_2",
+		"max_result_chars"
+	],
+	"fields": [
+		{
+			"default": "0",
+			"fieldname": "enabled",
+			"fieldtype": "Check",
+			"label": "Enabled"
+		},
+		{
+			"fieldname": "column_break_1",
+			"fieldtype": "Column Break"
+		},
+		{
+			"default": "gemini-2.5-flash",
+			"fieldname": "gemini_model",
+			"fieldtype": "Data",
+			"label": "Gemini Model",
+			"reqd": 1
+		},
+		{
+			"fieldname": "section_break_api",
+			"fieldtype": "Section Break",
+			"label": "API Key"
+		},
+		{
+			"fieldname": "gemini_api_key",
+			"fieldtype": "Password",
+			"label": "Gemini API Key",
+			"reqd": 1
+		},
+		{
+			"fieldname": "section_break_prompt",
+			"fieldtype": "Section Break",
+			"label": "System Prompt"
+		},
+		{
+			"default": "You are E2Next AI, a helpful ERPNext assistant. Answer questions about business data using the available tools. Always provide clear, concise answers with relevant numbers. Format currency and dates appropriately. If you are unsure, say so rather than guessing.",
+			"fieldname": "system_prompt",
+			"fieldtype": "Small Text",
+			"label": "System Prompt"
+		},
+		{
+			"fieldname": "section_break_limits",
+			"fieldtype": "Section Break",
+			"label": "Limits"
+		},
+		{
+			"default": "5",
+			"fieldname": "max_tool_rounds",
+			"fieldtype": "Int",
+			"label": "Max Tool Rounds",
+			"description": "Maximum number of tool call rounds per chat message"
+		},
+		{
+			"fieldname": "column_break_2",
+			"fieldtype": "Column Break"
+		},
+		{
+			"default": "4000",
+			"fieldname": "max_result_chars",
+			"fieldtype": "Int",
+			"label": "Max Result Chars",
+			"description": "Truncate tool results exceeding this character count"
+		}
+	],
+	"index_web_pages_for_search": 0,
+	"issingle": 1,
+	"links": [],
+	"modified": "2026-04-03 00:00:00",
+	"modified_by": "Administrator",
+	"module": "E2Next Ai",
+	"name": "E2Next AI Settings",
+	"owner": "Administrator",
+	"permissions": [
+		{
+			"create": 1,
+			"delete": 1,
+			"email": 1,
+			"print": 1,
+			"read": 1,
+			"role": "System Manager",
+			"share": 1,
+			"write": 1
+		}
+	],
+	"sort_field": "creation",
+	"sort_order": "DESC",
+	"states": [],
+	"track_changes": 0
+}

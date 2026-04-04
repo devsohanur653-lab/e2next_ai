@@ -30,7 +30,7 @@ bench_commands = ["e2next_ai.commands.commands"]
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/e2next_ai/css/e2next_ai.css"
-# app_include_js = "/assets/e2next_ai/js/e2next_ai.js"
+app_include_js = "/assets/e2next_ai/dist/e2next-chatbot.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/e2next_ai/css/e2next_ai.css"

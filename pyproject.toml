@@ -10,6 +10,7 @@ dynamic = ["version"]
 dependencies = [
     # "frappe~=16.0.0" # Installed and managed by bench.
     "mcp>=1.0.0",
+    "google-genai>=1.0.0",
 ]
 
 [build-system]
